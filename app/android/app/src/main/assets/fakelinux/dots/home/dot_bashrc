@@ -1,0 +1,6 @@
+# FakeLinux: Termux-side shell setup, then the PiercingXX bashrc.
+export PATH="$HOME/.local/bin:$PATH"
+[ -r "$HOME/.bashrc.piercingxx" ] && . "$HOME/.bashrc.piercingxx"
+[ -r "$HOME/.fzf/key-bindings.bash" ] && . "$HOME/.fzf/key-bindings.bash"
+[ -r "$HOME/.fzf/completion.bash" ] && . "$HOME/.fzf/completion.bash"
+export DISPLAY="${DISPLAY:-:0}"

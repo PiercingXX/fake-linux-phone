@@ -1,0 +1,22 @@
+# GitHub.com/PiercingXX
+[global]
+    font = JetBrains Mono 10
+    frame_width = 2
+    frame_color = "#ffffff"
+    corner_radius = 0
+    offset = "10x40"
+    origin = top-right
+    width = (0, 360)
+[urgency_low]
+    background = "#151515"
+    foreground = "#e4e4e4"
+    timeout = 3
+[urgency_normal]
+    background = "#151515"
+    foreground = "#e4e4e4"
+    timeout = 5
+[urgency_critical]
+    background = "#151515"
+    foreground = "#ff6767"
+    frame_color = "#ff6767"
+    timeout = 0

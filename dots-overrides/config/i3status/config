@@ -1,0 +1,38 @@
+# GitHub.com/PiercingXX
+general {
+    colors = true
+    color_good = "#ffffff"
+    color_degraded = "#8a8a8a"
+    color_bad = "#ff6767"
+    interval = 5
+    separator = " | "
+}
+
+order += "disk /"
+order += "memory"
+order += "battery all"
+order += "tztime local"
+
+disk "/" {
+    format = "%avail free"
+}
+
+memory {
+    format = "%used / %total"
+    threshold_degraded = "20%"
+    format_degraded = "LOW MEM %free"
+}
+
+battery all {
+    format = "%status %percentage"
+    format_down = ""
+    status_chr = "+"
+    status_bat = ""
+    status_full = "full"
+    low_threshold = 15
+    path = "/sys/class/power_supply/battery/uevent"
+}
+
+tztime local {
+    format = "%a %b %d  %H:%M"
+}

@@ -1,0 +1,3 @@
+---@diagnostic disable: undefined-global
+-- Globals are set in config.pack before the plugin loads.
+-- This file kept as a no-op hook for clarity/ordering.
